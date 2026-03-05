@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Ana ❤️</title>
+
+<style>
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+margin-top:100px;
+}
+
+img{
+width:200px;
+border-radius:20px;
+box-shadow:0 0 20px red;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+margin:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.sim{
+background:red;
+color:white;
+}
+
+.nao{
+background:gray;
+color:white;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:red;
+font-size:20px;
+animation:fall 5s linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-10px);}
+100%{transform:translateY(100vh);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Ana Theodoro ❤️</h1>
+
+<img src="ana.jpg">
+
+<p>
+Eu estou apaixonado por você desde quando nos conhecemos.  
+A cada conversa fui gostando mais de você, da forma que a gente conversa e da forma que você me faz bem.
+</p>
+
+<p>
+Eu amo seu jeito, amo tudo em você.
+</p>
+
+<p>
+Agora é oficial...  
+Eu sou o namorado da Ana Theodoro ❤️  
+E um dia ainda vou ser seu marido.
+</p>
+
+<h2>Você aceita namorar comigo? 💍</h2>
+
+<button class="sim" onclick="aceitou()">SIM ❤️</button>
+<button class="nao">NÃO</button>
+
+</div>
+
+<script>
+
+function aceitou(){
+alert("Agora é oficial! ❤️");
+}
+
+for(let i=0;i<30;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
